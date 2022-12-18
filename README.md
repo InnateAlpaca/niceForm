@@ -4,7 +4,7 @@ Easily receive and parse forms from a  website created with [Nicepage](https://n
 ## Usage
 Using the repository is very easy. With the "standard" setup you just create a niceForm object and listen to the address where your website will be sending the form (or the forms). You will receive a JSON object which you can handle as you wish: store it on disk, send it by email, use it inside your application...
 You can easily accept or reject the submission by calling the function `accept` or `reject`.
-
+Check the [documentation](https://github.com/InnateAlpaca/niceForm/blob/main/documentation.md) for more information.
 ```
 const { niceForm } = require('./niceForm');
 
