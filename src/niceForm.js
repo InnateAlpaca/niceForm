@@ -133,9 +133,4 @@ class niceForm extends EventEmitter{
     #http_enabled
 }
 
-const a = new niceForm({
-    http_port:71,
-    https_port:70
-});
-
 module.exports = {niceForm};
