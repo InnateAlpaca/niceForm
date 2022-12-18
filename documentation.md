@@ -26,6 +26,9 @@ Note that we have used a subdomain in this example.
 If you can handle domain records and your website is not hosted on the same server where you will send forms it's a good idea to make a subdomain which will redirect forms to this machine (where the niceForm is hosted).
 Also some browsers don't allow "cross-origin" requests so using a subdomain will avoid this issue. This is the best practice if you are not hosting the website on the same machhine as the niceForm server.
 
+### on(eventName, ...data)
+events emitted
+
 ## events
 Everytime a niceForm receives a form-request it will emit an event with the name of the webpage (with `/` before). You can listen to any webpage url where your form will be sent to.
 #### example
@@ -46,6 +49,9 @@ form_server.on('/enrolling', (form_object, accept, deny)=>{
     accept();
 })
 ```
+`accept` and `reject` are two functions that when called will update the form's status on your website.
+
+
 Other events you can listen to are errors (and you should listen to them so to avoid server crash):
 * error
 * http_error
