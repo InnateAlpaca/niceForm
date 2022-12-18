@@ -30,7 +30,7 @@ Also some browsers don't allow "cross-origin" requests so using a subdomain will
 Everytime a niceForm receives a form-request it will emit an event with the name of the webpage (with `/` before). You can listen to any webpage url where your form will be sent to.
 #### example
 Suppose that we have created two forms on our website: *info* in order to request custom information, and *enroll* in order to subscribe to our mailing list.
-we have setup the two urls as `https://forms.mywebsite.com/info`, and `https://forms.mywebsite.com/enrolling`
+We have setup the two urls as `https://forms.mywebsite.com/info`, and `https://forms.mywebsite.com/enrolling`
 ```
 const { niceForm } = require('./src/niceForm');
 
